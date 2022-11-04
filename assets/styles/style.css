@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Nunito', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+.body{
+    background-image: url("https://4.bp.blogspot.com/-M7sX37jnp6o/UgAxmy_zJ-I/AAAAAAAAYUE/kT8vAjhp6o4/w1200-h630-p-k-no-nu/Empanadas+(1).jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.header{
+    color: black;
+    text-align: center;
+    margin: 5vh 10vw;
+    background-color: white;
+    opacity: 0.8;
+    padding: 3vh 0;
+    border-radius: 20px;
+
+}
+
+.titulo{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.tituloDos{
+    font-style: italic;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.tituloTres{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding-bottom: 5vh;
+}
+
+.tituloCuatro{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3vh;
+    transition: all 1s;
+}
+
+.tituloCuatro:hover{
+    font-size: 3rem;
+}
+
+
+.lista{
+    color: white;
+    text-align: center;    
+}
+
+.linksContainer{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    padding: 30px;
+    margin-top: 5vh;
+    opacity: 0.8;
+}
+
+.section{
+    background-color: white;
+    padding: 40px 0px 40px 0px;
+    margin: 0px 200px 0px 200px;
+    opacity: 0.8;
+}
+
+.mainContent{
+    background-color: white;
+    opacity: 0.8;
+    padding: 50px;
+    margin: 100px;
+    border-radius: 20px;
+
+}
+
+
+.div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box{
+    width: 400px;
+    background-color: rgb(184, 126, 59);
+    color: white;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+.flexContent{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.flexContentDos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer{
+    background-color: white;
+    opacity: 0.8;
+    text-align: center;
+    display: flex;
+    gap: 40vw;
+    margin-top: 10vh;
+    padding: 2vw;
+}
+
+    
+.listaFooter{
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    gap: 5vw;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    margin: 10vh 10vw;
+    background-color: white;
+    opacity: 0.8;
+    padding: 5vw;
+    border-radius: 20px;
+}
+
+.formulario div{
+    width: 100%;
+    display: flex;
+
+}
+
+.formulario div .input{
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px;
+    resize: none;
+
+}
+
+.btnContainer{
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.imgContainer img{
+    width: 40%;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+
+.bodyOpiniones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas:
+    "dejar comentarios mejores comentarios mejores comentarios"
+    "dejar comentarios indefinido indefinido"
+    "comentarios comentarios encontranos en";
+}
+
+.sectionMejoresComentarios{
+    background-color: aqua;
+    grid-area: mejores comentarios;
+}
+
+.sectionDejarComentarios{
+    background-color: blue;
+    grid-area: dejar comentarios;
+}
+
+.sectionIndefinida{
+    background-color: yellowgreen;
+    grid-area: indefinido;
+}
+
+.sectionComentarios{
+    background-color: tomato;
+    grid-area: comentarios;
+}
+
+.sectionEncontranosEn{
+    background-color: springgreen;
+    grid-area: encontranos en;
+}
+
+.imgContacto{
+    width: 25px;
+}
+
+.formasDePago{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.formasDePago img{
+    width: 15%;
+}
+
+
+@media screen and (max-width: 600px){
+    .linksContainer{
+        display: none;
+    }
+
+    .imgContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .imgContainer img{
+        width: 100%;
+    }
+
+    .flexContentDos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    .box{
+        width: 80%;
+
+    }
+
+    .div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+
+    }
+
+    .listaFooter{
+        justify-content: center;
+        padding: 1rem;
+    }
+}
