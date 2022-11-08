@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Con mucho gusto</title>
 </head>
 <body class="body">
-    <header class="header">
+    <header class="header animate__animated animate__backInDown">
         <h1 class="titulo">Con Mucho Gusto.</h1>
         <h2 class="tituloDos">Pizzería y casa de comidas</h2>
     </header>
@@ -19,44 +20,124 @@
     <nav>
         <ul class="linksContainer">
             <li>
-                <a href="./../index.html">Inicio</a>
+                <a href="./../index.html" class="linkNav"><img src="./../assets/images/house-solid.svg" alt="casa"><span>Inicio</span></a>
             </li>
             <li>
-                <a href="./quienesomos.html">Quiénes somos</a>
+                <a href="./quienesomos.html" class="linkNav"><img src="./../assets/images/users-solid.svg" alt="personas"><span>Quienes somos</span></a>
             </li>
             <li>
-                <a href="./menu.html">Menú de comidas</a>
+                <a href="./menu.html" class="linkNav"><img src="./../assets/images/utensils-solid.svg" alt="utensillos"><span>Menu de comidas</span></a>
             </li>
             <li>
-                <a href="./opiniones.html" class="active">Opiniones de clientes</a>
+                <a href="./opiniones.html" class="active linkNav"><img src="./../assets/images/message-solid.svg" alt="mensaje" class="clicked"><span>Opiniones de clientes</span></a>
             </li>
             <li>
-                <a href="./contacto.html">Contacto</a>
+                <a href="./contacto.html" class="linkNav"><img src="./../assets/images/phone-solid.svg" alt="celular"><span>Contacto</span></a>
             </li>
         </ul>
     </nav>
 
-    <div class="bodyOpiniones">
-        <main class="sectionMejoresComentarios">
-            mejores comentarios
-        </main>
-    
-        <section class="sectionDejarComentarios">
-            dejar comentarios
-        </section>
-    
-        <section class="sectionIndefinida">
-            indefinido
-        </section>
-    
-        <section class="sectionComentarios">
-            comentarios
-        </section>
-    
-        <section class="sectionEncontranosEn">
-            encontranos en
-        </section>
-    </div>
+    <section class="mainContent divsContainer">
+        <div class="commentForm">
+            <h3>Dejanos tu comentario :)</h3>
+            <input type="text" name="" id="" class="inputDos" placeholder="Escribe tu comentario">
+            <input type="submit" value="Enviar" class="submit">
+        </div>
+        <div class="comentarios">
+            <div class="comentariosDos">
+                <p>20/06/2022</p>
+                <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos doloribus ipsa blanditiis consequuntur, rerum mollitia repudiandae autem quos? Eius excepturi quasi architecto a fugiat voluptatibus quod iusto soluta. Possimus!"</p>
+                <div class="info">
+                    <p>-Maria Gomez</p>
+                    <div class="starContainer">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                    </div>
+                </div>
+            </div>
+            <div class="comentariosDos">
+                <p>20/06/2022</p>
+                <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos doloribus ipsa blanditiis consequuntur, rerum mollitia repudiandae autem quos? Eius excepturi quasi architecto a fugiat voluptatibus quod iusto soluta. Possimus!"</p>
+                <div class="info">
+                    <p>-Maria Gomez</p>
+                    <div class="starContainer">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                    </div>
+                </div>
+            </div>
+            <div class="comentariosDos">
+                <p>20/06/2022</p>
+                <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos doloribus ipsa blanditiis consequuntur, rerum mollitia repudiandae autem quos? Eius excepturi quasi architecto a fugiat voluptatibus quod iusto soluta. Possimus!"</p>
+                <div class="info">
+                    <p>-Maria Gomez</p>
+                    <div class="starContainer">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                    </div>
+                </div>
+            </div>
+            <div class="comentariosDos">
+                <p>20/06/2022</p>
+                <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos doloribus ipsa blanditiis consequuntur, rerum mollitia repudiandae autem quos? Eius excepturi quasi architecto a fugiat voluptatibus quod iusto soluta. Possimus!"</p>
+                <div class="info">
+                    <p>-Maria Gomez</p>
+                    <div class="starContainer">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                    </div>
+                </div>
+            </div>
+            <div class="comentariosDos">
+                <p>20/06/2022</p>
+                <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos doloribus ipsa blanditiis consequuntur, rerum mollitia repudiandae autem quos? Eius excepturi quasi architecto a fugiat voluptatibus quod iusto soluta. Possimus!"</p>
+                <div class="info">
+                    <p>-Maria Gomez</p>
+                    <div class="starContainer">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                    </div>
+                </div>
+            </div>
+            <div class="comentariosDos">
+                <p>20/06/2022</p>
+                <p class="text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos doloribus ipsa blanditiis consequuntur, rerum mollitia repudiandae autem quos? Eius excepturi quasi architecto a fugiat voluptatibus quod iusto soluta. Possimus!"</p>
+                <div class="info">
+                    <p>-Maria Gomez</p>
+                    <div class="starContainer">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mapa">
+            <div class="findUs">
+                <h3>Encontranos en</h3>
+                <img src="./../assets/images/right-long-solid.svg" alt="">
+                <p>Calle 169 entre 519 y 520, Melchor Romero, La Plata, Buenos Aires, Argentina.</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.322829113838!2d-58.04823827481465!3d-34.9485165161903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2dde7889e8f45%3A0x5054d9d438c8e1a2!2sDelegaci%C3%B3n%20Registro%20Provincial%20de%20las%20Personas%20-%20Jos%C3%A9%20Melchor%20Romero!5e0!3m2!1ses-419!2sar!4v1667907730049!5m2!1ses-419!2sar" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion"></iframe>
+        </div>
+    </section>
 
     
 
@@ -64,13 +145,13 @@
         <p>Copyright © Con Mucho Gusto 2022. Todos los derechos reservados.</p>
         <ul class="listaFooter">
             <li>
-                <a href="https://wa.me/2215064840" target="_blank"><img src="./../whatsapp (1).svg" alt="whatsapp" class="imgContacto"></a>
+                <a href="https://wa.me/2215064840" target="_blank"><img src="./../assets/images/whatsapp (1).svg" alt="whatsapp" class="imgContacto"></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/conmuchogusto.pizzeria/" target="_blank"><img src="./../instagram.svg" alt="Instagram" class="imgContacto"></a>
+                <a href="https://www.instagram.com/conmuchogusto.pizzeria/" target="_blank"><img src="./../assets/images/instagram.svg" alt="Instagram" class="imgContacto"></a>
             </li>
             <li>
-                <a href="https://www.facebook.com/cmgpizzeria" target="_blank"><img src="./../facebook.svg" alt="Facebook" class="imgContacto"></a>
+                <a href="https://www.facebook.com/cmgpizzeria" target="_blank"><img src="./../assets/images/facebook.svg" alt="Facebook" class="imgContacto"></a>
             </li>
         </ul>
     </footer>
