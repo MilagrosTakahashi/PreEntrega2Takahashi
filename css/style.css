@@ -1,0 +1,360 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  color: black; }
+
+.body {
+  background-image: url("https://4.bp.blogspot.com/-M7sX37jnp6o/UgAxmy_zJ-I/AAAAAAAAYUE/kT8vAjhp6o4/w1200-h630-p-k-no-nu/Empanadas+(1).jpg");
+  background-repeat: repeat-y;
+  background-size: cover; }
+
+.header {
+  color: black;
+  text-align: center;
+  margin: 5vh 10vw;
+  background-color: white;
+  opacity: 0.8;
+  padding: 3vh 0;
+  border-radius: 20px; }
+  .header .titulo {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif; }
+  .header .tituloDos {
+    font-style: italic;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0; }
+
+.tituloTres {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding-bottom: 5vh; }
+
+.lista {
+  color: white;
+  text-align: center; }
+
+.linksContainer {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+  background-color: white;
+  padding: 30px;
+  margin-top: 5vh;
+  opacity: 0.8; }
+  .linksContainer .active {
+    text-decoration: underline; }
+  .linksContainer .linkNav {
+    display: flex;
+    gap: 1rem; }
+    .linksContainer .linkNav img {
+      width: 25px; }
+
+.section {
+  background-color: white;
+  padding: 40px 0px 40px 0px;
+  margin: 0px 200px 0px 200px;
+  opacity: 0.8; }
+
+.mainContent {
+  background-color: white;
+  opacity: 0.8;
+  padding: 30px;
+  margin: 56px;
+  border-radius: 20px; }
+
+.div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none; }
+
+.flexContent {
+  display: flex;
+  flex-direction: column; }
+
+.flexContentDos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: none;
+  flex-wrap: wrap; }
+  .flexContentDos .box {
+    width: 400px;
+    background-color: #b87e3b;
+    color: white;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+    transition: all 0.5s; }
+    .flexContentDos .box:hover {
+      width: 430px; }
+    .flexContentDos .box p {
+      color: white; }
+    .flexContentDos .box .tituloCuatro {
+      color: white;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 3vh;
+      transition: all 0.5s; }
+      .flexContentDos .box .tituloCuatro:hover {
+        font-size: 2.3rem; }
+
+.footer {
+  background-color: white;
+  opacity: 0.8;
+  text-align: center;
+  display: flex;
+  gap: 40vw;
+  margin-top: 10vh;
+  padding: 2vw; }
+  .footer .listaFooter {
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    gap: 5vw; }
+    .footer .listaFooter .imgContacto {
+      width: 25px; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: 3vh;
+  margin: 10vh 10vw;
+  background-color: white;
+  opacity: 0.8;
+  padding: 5vw;
+  border-radius: 20px; }
+  .formulario div {
+    width: 100%;
+    display: flex; }
+    .formulario div .input {
+      width: 100%;
+      border: none;
+      border-bottom: solid 1px;
+      resize: none;
+      color: black; }
+      .formulario div .input::placeholder {
+        color: black; }
+  .formulario .btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5vw; }
+    .formulario .btnContainer .submitDos {
+      border: #805626 solid 1px;
+      padding: 10px;
+      border-radius: 10px;
+      width: 150px;
+      color: white;
+      background-color: #9b682e; }
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  gap: 5vw; }
+  .imgContainer img {
+    width: 40%; }
+
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh; }
+
+.divsContainer {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr auto;
+  grid-template-areas: "input comentarios comentarios" "encontranos encontranos encontranos"; }
+
+.input {
+  grid-area: input;
+  border: black solid 1px;
+  color: white; }
+  .input::placeholder {
+    color: white; }
+  .input p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem 0 2rem 0; }
+
+.comentarios {
+  grid-area: comentarios;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center; }
+
+.comentariosDos {
+  width: 352px;
+  background-color: #b87e3b;
+  border-radius: 10px;
+  padding: 10px; }
+  .comentariosDos p {
+    color: white;
+    padding-bottom: 5px; }
+  .comentariosDos .text {
+    color: white;
+    height: 90px;
+    overflow-y: scroll;
+    background-color: #9b682e;
+    padding: 5px;
+    border: #805626 solid 1px; }
+  .comentariosDos .info {
+    display: flex;
+    justify-content: space-between; }
+    .comentariosDos .info .starContainer {
+      display: flex;
+      padding-top: 8px; }
+      .comentariosDos .info .starContainer img {
+        width: 20px; }
+    .comentariosDos .info p {
+      padding-top: 8px; }
+
+.formasDePago {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem; }
+  .formasDePago img {
+    width: 15%; }
+  .formasDePago p {
+    font-size: 1.1rem; }
+
+.commentForm {
+  background-color: #b87e3b;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh; }
+  .commentForm h3 {
+    color: white;
+    font-size: 1.5rem; }
+  .commentForm label {
+    color: white; }
+  .commentForm .submit {
+    border: #805626 solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    color: white;
+    background-color: #9b682e;
+    margin-top: 20px; }
+  .commentForm .inputDos {
+    border: #805626 solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    color: white;
+    background-color: #9b682e;
+    border: none;
+    border-bottom: #805626 solid 1px; }
+    .commentForm .inputDos::placeholder {
+      color: rgba(255, 254, 254, 0.575); }
+
+.mapa {
+  grid-area: encontranos;
+  background-color: #b87e3b;
+  border-radius: 10px;
+  margin-top: 2rem;
+  display: flex;
+  padding: 10px; }
+  .mapa .findUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%; }
+    .mapa .findUs img {
+      width: 30%; }
+    .mapa .findUs h3 {
+      font-size: 2rem;
+      color: white; }
+    .mapa .findUs p {
+      color: white;
+      font-size: 1.1rem; }
+
+.ubicacion {
+  border-radius: 10px;
+  width: 40%; }
+
+@media screen and (max-width: 1320px) {
+  .divsContainer {
+    display: flex;
+    flex-direction: column; }
+    .divsContainer h3 {
+      margin-top: 2vh; }
+    .divsContainer .submit {
+      margin-bottom: 2vh; }
+  .comentarios .comentariosDos {
+    width: 100%; } }
+
+@media screen and (max-width: 970px) {
+  .mainContent {
+    margin: 15px;
+    padding: 15px; }
+  .linkNav span {
+    display: none; }
+  .clicked {
+    border-bottom: 3px solid;
+    padding-bottom: 10px; }
+  .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0; }
+    .footer .listaFooter {
+      justify-content: center;
+      padding: 1rem; }
+  .flexContentDos .box {
+    margin: 10px; }
+    .flexContentDos .box .tituloCuatro {
+      font-size: 1.5rem; } }
+
+@media screen and (max-width: 600px) {
+  .mainContent {
+    margin: 20px; }
+  .imgContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh; }
+    .imgContainer img {
+      width: 100%; }
+  .flexContentDos {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5vh; }
+    .flexContentDos .box {
+      width: 80%; }
+  .div {
+    display: flex;
+    flex-direction: column; }
+  .linkNav span {
+    display: none; }
+  .clicked {
+    border-bottom: 3px solid;
+    padding-bottom: 10px; }
+  .formasDePago img {
+    width: 10%; }
+  .mapa .findUs h3 {
+    font-size: 1.5rem; }
+  .mapa .findUs p {
+    font-size: 14px; } }

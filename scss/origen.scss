@@ -1,0 +1,434 @@
+@import "./variables";
+@import "./mixins";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $family-text;
+    text-decoration: none;
+    color: black;
+}
+
+.body{
+    background-image: url($bg-img-path);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+.header{
+    color: black;
+    text-align: center;
+    margin: 5vh 10vw;
+    background-color: white;
+    opacity: 0.8;
+    padding: 3vh 0;
+    border-radius: 20px;
+    .titulo{
+        font-size: 3rem;
+        margin: 0;
+        padding: 0;
+        font-family: $family-title;
+    }
+    .tituloDos{
+        font-style: italic;
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.tituloTres{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    padding-bottom: 5vh;
+}
+
+.lista{
+    color: white;
+    text-align: center;    
+}
+
+.linksContainer{
+    list-style: none;
+    @include flex (row, space-around, none);
+    background-color: white;
+    padding: 30px;
+    margin-top: 5vh;
+    opacity: 0.8;
+    .active{
+        text-decoration: underline;
+    }
+    .linkNav{
+        display: flex;
+        gap: 1rem;
+        img{
+            width: 25px;
+        }
+    }
+}
+
+.section{
+    background-color: white;
+    padding: 40px 0px 40px 0px;
+    margin: 0px 200px 0px 200px;
+    opacity: 0.8;
+}
+
+.mainContent{
+    background-color: white;
+    opacity: 0.8;
+    padding: 30px;
+    margin: 56px;
+    border-radius: 20px;
+}
+
+
+.div{
+    @include flex (row, space-around, none);
+}
+
+.flexContent{
+    display: flex;
+    flex-direction: column;   
+}
+
+.flexContentDos{
+    @include flex (row, space-around, none);
+    flex-wrap: wrap;
+    .box{
+        width: $ancho;
+        background-color: map-get($colores, marron-claro);
+        color: white;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 20px;
+        transition: all 0.5s;
+        &:hover{
+            width: 430px;
+        }
+        p{
+            color: white;
+        }
+        .tituloCuatro{
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3vh;
+            transition: all 0.5s;
+            &:hover{
+                font-size: 2.3rem;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: white;
+    opacity: 0.8;
+    text-align: center;
+    display: flex;
+    gap: 40vw;
+    margin-top: 10vh;
+    padding: 2vw;
+    .listaFooter{
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+        gap: 5vw;
+        .imgContacto{
+            width: 25px;
+        }
+    }
+}
+
+.formulario{
+    @include flex (column, none, center);
+    gap: 3vh;
+    margin: 10vh 10vw;
+    background-color: white;
+    opacity: 0.8;
+    padding: 5vw;
+    border-radius: 20px;
+    div{
+        width: 100%;
+        display: flex;
+        .input{
+            width: 100%;
+            border: none;
+            border-bottom: solid 1px;
+            resize: none;
+            color: black;
+            &::placeholder{
+                color: black;
+            }
+        }
+    }
+    .btnContainer{
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+        .submitDos{
+            @include input-base ($width: 150px, $bg-color: marron);
+        }
+    }
+}
+        
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    img{
+        width: 40%;
+    }
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.divsContainer{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr auto;
+    grid-template-areas: 
+    "input comentarios comentarios"
+    "encontranos encontranos encontranos";
+}
+
+.input{
+    grid-area: input;
+    border: black solid 1px;
+    color: white;
+    &::placeholder{
+        color: white;
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 2rem 0 2rem 0;
+    }
+}
+
+.comentarios{
+    grid-area: comentarios;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.comentariosDos{
+    width: ($ancho)-48;
+    background-color: map-get($colores, marron-claro);
+    border-radius: 10px;
+    padding: 10px;
+    p{
+        color: white;
+        padding-bottom: 5px;
+    }
+    .text{
+        color: white;
+        height: 90px;
+        overflow-y: scroll;
+        background-color: map-get($colores, marron);
+        padding: 5px;
+        border: map-get($colores, marron-oscuro) solid 1px;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        .starContainer{
+            display: flex;
+            padding-top: 8px;
+            img{
+                width: 20px;
+            }
+        }
+        p{
+            padding-top: 8px;
+        }
+    }
+}
+
+.formasDePago{
+    @include flex (column, none, center);
+    gap: 1rem;
+    margin-top: 1rem;
+    img{
+        width: 15%;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+}
+
+.commentForm{
+    h3{
+        color: white;
+        font-size: 1.5rem;
+    }
+    label{
+        color: white;
+    }
+    background-color: map-get($colores, marron-claro);
+    border-radius: 10px;
+    @include flex (column, center, center);
+    gap: 3vh;
+    .submit{
+        @include input-base($width: 150px, $bg-color: marron);
+        margin-top: 20px;
+    }
+    .inputDos{
+        @include input-base($width: 80%, $bg-color: marron);
+        border: none;
+        border-bottom: rgb(128, 86, 38) solid 1px;
+        &::placeholder{
+            color: rgba(255, 254, 254, 0.575);
+        }
+    }
+}
+
+.mapa{
+    grid-area: encontranos;
+    background-color: map-get($colores, marron-claro);
+    border-radius: 10px;
+    margin-top: 2rem;
+    display: flex;
+    padding: 10px;
+    .findUs{
+        @include flex (column, center, center);
+        text-align: center;
+        width: 60%;
+        img{
+            width: 30%;
+        }
+        h3{
+            font-size: 2rem;
+            color: white;
+        }
+        p{
+            color: white;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.ubicacion{
+    border-radius: 10px;
+    width: 40%;
+}
+
+@media screen and (max-width: 1320px){
+    .divsContainer{
+        display: flex;
+        flex-direction: column;
+        h3{
+            margin-top: 2vh;
+        }
+        .submit{
+            margin-bottom: 2vh;
+        }
+    }
+
+    .comentarios{
+        .comentariosDos{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 970px){
+    .mainContent{
+        margin: 15px;
+        padding: 15px;
+    }
+    .linkNav span{
+        display: none;
+    }
+
+    .clicked{
+        border-bottom: 3px solid;
+        padding-bottom: 10px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        .listaFooter{
+            justify-content: center;
+            padding: 1rem;
+        }
+    }
+
+    .flexContentDos{
+        .box{
+            margin: 10px;
+            .tituloCuatro{
+                font-size: 1.5rem;
+            }
+            }
+        }
+    }
+
+@media screen and (max-width: 600px){
+    .mainContent{
+        margin: 20px;
+    }
+
+    .imgContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        img{
+            width: 100%;
+        }
+    }
+
+    .flexContentDos{
+        @include flex (column, none, center);
+        flex-wrap: nowrap;
+        gap: 5vh;
+        .box{
+            width: 80%;
+        }
+    }
+
+    .div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linkNav span{
+        display: none;
+    }
+
+    .clicked{
+        border-bottom: 3px solid;
+        padding-bottom: 10px;
+    }
+
+    .formasDePago{
+        img{
+            width: 10%;
+        }
+    }
+
+    .mapa{
+        .findUs{
+            h3{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

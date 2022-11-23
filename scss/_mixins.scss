@@ -1,0 +1,24 @@
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin input-base($width, $bg-color){
+    border: rgb(128, 86, 38) solid 1px;
+    padding: 10px;
+    border-radius: 10px;
+    width: $width;
+    color: white;
+    @if $bg-color == marron {
+        background-color: rgb(155, 104, 46);
+    }
+    @else if $bg-color == rojo{
+        background-color: red;
+    }
+    @else{
+        background-color: aqua;
+    }
+
+}

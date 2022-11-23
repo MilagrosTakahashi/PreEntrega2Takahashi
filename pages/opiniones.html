@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce las opiniones de nuestros clientes en Con Mucho Gusto. Dejanos tu opinion acerca de nosotros.">
+    <meta name="keywords" content="opiniones pizzeria casa de comidas clientes comentarios encontranos">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./../assets/styles/style.css">
+    <link rel="stylesheet" href="./../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Con mucho gusto</title>
 </head>
@@ -20,29 +22,34 @@
     <nav>
         <ul class="linksContainer">
             <li>
-                <a href="./../index.html" class="linkNav"><img src="./../assets/images/house-solid.svg" alt="casa"><span>Inicio</span></a>
+                <a href="./../index.html" class="linkNav"><img src="./../assets/images/casa.svg" alt="casa"><span>Inicio</span></a>
             </li>
             <li>
-                <a href="./quienesomos.html" class="linkNav"><img src="./../assets/images/users-solid.svg" alt="personas"><span>Quienes somos</span></a>
+                <a href="./quienesomos.html" class="linkNav"><img src="./../assets/images/personas.svg" alt="personas"><span>Quienes somos</span></a>
             </li>
             <li>
-                <a href="./menu.html" class="linkNav"><img src="./../assets/images/utensils-solid.svg" alt="utensillos"><span>Menu de comidas</span></a>
+                <a href="./menu.html" class="linkNav"><img src="./../assets/images/cubiertos.svg" alt="utensillos"><span>Menu de comidas</span></a>
             </li>
             <li>
-                <a href="./opiniones.html" class="active linkNav"><img src="./../assets/images/message-solid.svg" alt="mensaje" class="clicked"><span>Opiniones de clientes</span></a>
+                <a href="./opiniones.html" class="active linkNav"><img src="./../assets/images/mensaje.svg" alt="mensaje" class="clicked"><span>Opiniones de clientes</span></a>
             </li>
             <li>
-                <a href="./contacto.html" class="linkNav"><img src="./../assets/images/phone-solid.svg" alt="celular"><span>Contacto</span></a>
+                <a href="./contacto.html" class="linkNav"><img src="./../assets/images/telefono.svg" alt="celular"><span>Contacto</span></a>
             </li>
         </ul>
     </nav>
 
     <section class="mainContent divsContainer">
-        <div class="commentForm">
+        <form class="commentForm">
             <h3>Dejanos tu comentario :)</h3>
-            <input type="text" name="" id="" class="inputDos" placeholder="Escribe tu comentario">
+            <label for="nombre">Escribe tu nombre</label>
+            <input type="text" name="nombre" id="nombre" class="inputDos" placeholder="John Doe">
+            <label for="mail">Escribe tu mail</label>
+            <input type="text" name="mail" id="mail" class="inputDos" placeholder="john_doe@gmail.com">
+            <label for="comentario">Escribe tu comentario</label>
+            <input type="text" name="comentarios" id="comentarios" class="inputDos" placeholder="Nos agrado mucho este lugar...">
             <input type="submit" value="Enviar" class="submit">
-        </div>
+        </form>
         <div class="comentarios">
             <div class="comentariosDos">
                 <p>20/06/2022</p>
@@ -50,11 +57,11 @@
                 <div class="info">
                     <p>-Maria Gomez</p>
                     <div class="starContainer">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
                     </div>
                 </div>
             </div>
@@ -64,11 +71,11 @@
                 <div class="info">
                     <p>-Maria Gomez</p>
                     <div class="starContainer">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
                     </div>
                 </div>
             </div>
@@ -78,11 +85,11 @@
                 <div class="info">
                     <p>-Maria Gomez</p>
                     <div class="starContainer">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
                     </div>
                 </div>
             </div>
@@ -92,11 +99,11 @@
                 <div class="info">
                     <p>-Maria Gomez</p>
                     <div class="starContainer">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
                     </div>
                 </div>
             </div>
@@ -106,11 +113,11 @@
                 <div class="info">
                     <p>-Maria Gomez</p>
                     <div class="starContainer">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
                     </div>
                 </div>
             </div>
@@ -120,11 +127,11 @@
                 <div class="info">
                     <p>-Maria Gomez</p>
                     <div class="starContainer">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
-                        <img src="./../assets/images/star-solid.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
+                        <img src="./../assets/images/estrella.svg" alt="estrellas">
                     </div>
                 </div>
             </div>
@@ -132,7 +139,7 @@
         <div class="mapa">
             <div class="findUs">
                 <h3>Encontranos en</h3>
-                <img src="./../assets/images/right-long-solid.svg" alt="">
+                <img src="./../assets/images/flecha.svg" alt="flecha">
                 <p>Calle 169 entre 519 y 520, Melchor Romero, La Plata, Buenos Aires, Argentina.</p>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.322829113838!2d-58.04823827481465!3d-34.9485165161903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2dde7889e8f45%3A0x5054d9d438c8e1a2!2sDelegaci%C3%B3n%20Registro%20Provincial%20de%20las%20Personas%20-%20Jos%C3%A9%20Melchor%20Romero!5e0!3m2!1ses-419!2sar!4v1667907730049!5m2!1ses-419!2sar" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="ubicacion"></iframe>
@@ -145,7 +152,7 @@
         <p>Copyright © Con Mucho Gusto 2022. Todos los derechos reservados.</p>
         <ul class="listaFooter">
             <li>
-                <a href="https://wa.me/2215064840" target="_blank"><img src="./../assets/images/whatsapp (1).svg" alt="whatsapp" class="imgContacto"></a>
+                <a href="https://wa.me/2215064840" target="_blank"><img src="./../assets/images/whatsapp.svg" alt="whatsapp" class="imgContacto"></a>
             </li>
             <li>
                 <a href="https://www.instagram.com/conmuchogusto.pizzeria/" target="_blank"><img src="./../assets/images/instagram.svg" alt="Instagram" class="imgContacto"></a>
